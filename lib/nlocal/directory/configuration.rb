@@ -8,7 +8,9 @@ module Nlocal
 
       mattr_accessor :her_default_opts
       @@her_default_block = {|c|
+
        # Request
+       c.use Nlocal::Directory::Middleware::TokenAuthentication
        c.use Faraday::Request::UrlEncoded
 
        # Response

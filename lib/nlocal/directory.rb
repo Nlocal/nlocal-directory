@@ -1,5 +1,4 @@
-require "nlocal/directory/version"
-require 'nlocal/directory/configuration'
+Dir[File.expand_path("../directory/**/*.rb", __FILE__)].each{ |f| require f}
 
 module Nlocal
   module Directory
