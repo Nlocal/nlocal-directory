@@ -1,4 +1,7 @@
-Dir[File.expand_path("../directory/**/*.rb", __FILE__)].each{ |f| require f}
+require 'her'
+require 'request_store'
+require_relative './directory/configuration'
+require_relative './directory/version'
 
 module Nlocal
   module Directory
@@ -20,3 +23,5 @@ module Nlocal
 
   end
 end
+
+Dir[File.expand_path("../directory/**/*.rb", __FILE__)].each{ |f| require f}
