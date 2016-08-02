@@ -3,6 +3,7 @@ module Nlocal
     class User < ApiBase
       validates :username, presence: true
       validates :email, presence: true
+      after_find :pepe
 
       has_many :messages
       has_many :comments
@@ -10,6 +11,12 @@ module Nlocal
       def me
         get("/me")
       end
+
+      def self.find(*args)
+        obj= super
+        obj.becomes "Nlocal::Directory::#{obj.type}".constantize if obj.type
+      end
+
     end
   end
 end
