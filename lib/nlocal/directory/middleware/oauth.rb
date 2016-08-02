@@ -5,7 +5,7 @@ module Nlocal
 
       class Oauth < Faraday::Middleware
         def call(env)
-          env[:request_headers]["Authorization"] = "bearer " + ::RequestStore.store[:token] if ::RequestStore.store[:token]
+          env[:request_headers]["Authorization"] = "bearer " + ::RequestStore.store[:token].access_token if ::RequestStore.store[:token]
           @app.call(env).on_complete do |response_env|
             case response_env[:status]
             when 401

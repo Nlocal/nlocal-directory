@@ -24,4 +24,6 @@ module Nlocal
   end
 end
 
-Dir[File.expand_path("../directory/**/*.rb", __FILE__)].each{ |f| require f}
+require_relative './directory/resources/api_base'
+Dir[File.expand_path("../directory/resources/modules/**/*.rb", __FILE__)].each{ |f| require f}
+Dir[File.expand_path("../directory/resources/**/*.rb", __FILE__)].each{ |f| require f}
