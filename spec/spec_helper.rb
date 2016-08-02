@@ -1,10 +1,18 @@
 require 'bundler/setup'
 Bundler.setup
 
-require 'your_gem_name' # and any other gems you need
+require 'nlocal-directory' # and any other gems you need
+require 'support/factory_girl'
+require 'her'
 
 RSpec.configure do |config|
   # some (optional) config here
+  config.include FactoryGirl::Syntax::Methods
+
+  config.before(:suite) do
+    FactoryGirl.find_definitions
+  end
+
   config.include(Module.new do
    def stub_api_for(klass)
      klass.use_api (api = Her::API.new)
