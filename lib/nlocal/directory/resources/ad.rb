@@ -10,7 +10,7 @@ module Nlocal
       validates :advertiser_id, presence: true
       validates :title, presence: true
 
-      def link_category(category_id)
+      def categorize(category_id)
         self.class.post("ads/#{self.id}/categories/#{category_id}",{})
         self.categories
       end
