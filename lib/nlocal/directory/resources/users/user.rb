@@ -3,7 +3,6 @@ module Nlocal
     class User < ApiBase
       validates :username, presence: true
       validates :email, presence: true
-      after_find :pepe
 
       has_many :messages
       has_many :comments
