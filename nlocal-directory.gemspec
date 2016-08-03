@@ -22,6 +22,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.5"
   spec.add_development_dependency "factory_girl", "~> 4.0"
+  spec.add_development_dependency "vcr","~> 3.0"
+  spec.add_development_dependency "webmock"
   spec.add_runtime_dependency "her", "~> 0.8"
   spec.add_runtime_dependency "request_store", "~> 1.3"
 end

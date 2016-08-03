@@ -1,13 +1,21 @@
 require 'bundler/setup'
 Bundler.setup
 
-require 'nlocal-directory' # and any other gems you need
-require 'support/factory_girl'
+require 'nlocal/directory' # and any other gems you need
+require 'factory_girl'
 require 'her'
+require 'vcr'
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.allow_http_connections_when_no_cassette = true
+end
 
 RSpec.configure do |config|
   # some (optional) config here
   config.include FactoryGirl::Syntax::Methods
+  config.extend VCR::RSpec::Macros
 
   config.before(:suite) do
     FactoryGirl.find_definitions
