@@ -13,7 +13,7 @@ module Nlocal
 
       def self.find(*args)
         obj= super
-        obj.becomes "Nlocal::Directory::#{obj.type}".constantize if obj.type
+        obj.becomes "Nlocal::Directory::#{obj.type}".constantize if obj && obj.type
       end
 
     end
