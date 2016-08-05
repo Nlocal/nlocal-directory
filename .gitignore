@@ -12,3 +12,6 @@
 *.o
 *.a
 mkmf.log
+
+# Ignore environmental variables
+.env*
