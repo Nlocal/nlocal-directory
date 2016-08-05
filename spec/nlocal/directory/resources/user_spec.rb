@@ -1,7 +1,9 @@
 require 'spec_helper'
-describe Nlocal::Directory::User do
-  before do
-    RequestStore[:token]= Nlocal::Directory::Token.create(email: "daniel.prado@nlocal.com", password: "prueba327")
+RSpec.describe Nlocal::Directory::User do
+  before :all do
+    test_user
+    test_password
+    RequestStore.store[:token]= Nlocal::Directory::Token.create
   end
 
   describe :index do
