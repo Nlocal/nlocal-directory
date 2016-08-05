@@ -5,6 +5,9 @@ require 'nlocal/directory' # and any other gems you need
 require 'factory_girl'
 require 'her'
 require 'vcr'
+require 'dotenv'
+require 'byebug'
+Dotenv.load
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
@@ -61,4 +64,12 @@ RSpec.configure do |config|
    end
 
   end)
+end
+
+def test_user
+  RequestStore.store[:user] ||= ENV['API_EMAIL']
+end
+
+def test_password
+  RequestStore.store[:password] ||= ENV['API_PASSWORD']
 end
