@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://devbox:3000/oauth/token
+    body:
+      encoding: UTF-8
+      string: email=<USER>&grant_type=password&password=<PASSWORD>
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec298f232c64dcbef489929cc1a7b5a4"
+      X-Request-Id:
+      - fc156fc8-1cb0-422a-b449-99682aca5fc6
+      X-Runtime:
+      - '0.072621'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86399,"created_at":1470734828}'
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 09:27:08 GMT
+recorded_with: VCR 3.0.3

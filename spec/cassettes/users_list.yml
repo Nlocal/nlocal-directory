@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://devbox:3000/api/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/vnd.nlocal-v1+json
+      Authorization:
+      - bearer <DUMMY_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Request-Method:
+      - '*'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"1c75406daf66c464459335f64d9bd262"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _nlocal-directory-api_session=TGMzQjM4OE80UmovSWhKcS92d1pEWFMwTitBV3hmamdhL2dqNFNUOTg4TDZiejE2NFFHbmR6V0l1QzFFVlVkUzhmWWxLdCtZU254djRVSDkycTV4RlE9PS0tSW9scC9MemlPZDJidnhrbUVOWHFNZz09--1053bef2fbe9c8cf8fb4b176a736de991562c6d8;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 1f5ca91d-f2d3-414c-b9d1-f48ed98ad85d
+      X-Runtime:
+      - '0.110429'
+      Vary:
+      - Origin
+      Content-Length:
+      - '2902'
+    body:
+      encoding: UTF-8
+      string: '[{"id":34,"first_name":"","last_name":"","email":"prueba.nlocal7@nlocal.com","username":"gema1","type":"Advertiser"},{"id":33,"first_name":"test","last_name":"creating","email":"advertiser7@nlocal.com","username":"advertiser7","type":"Advertiser"},{"id":32,"first_name":"test","last_name":"creating","email":"advertiser6@nlocal.com","username":"advertiser6","type":"Advertiser"},{"id":31,"first_name":"test","last_name":"creating","email":"advertiser5@nlocal.com","username":"advertiser5","type":"Advertiser"},{"id":29,"first_name":"test","last_name":"creating","email":"advertiser4@nlocal.com","username":"advertiser3","type":"Advertiser"},{"id":28,"first_name":"test","last_name":"creating","email":"advertiser3@nlocal.com","username":"advertiser4","type":"Advertiser"},{"id":27,"first_name":"","last_name":"","email":"advertiser2@nlocal.com","username":"advertiser2","type":"Advertiser"},{"id":26,"first_name":"","last_name":"","email":"advertiser@nlocal.com","username":"advertiser1","type":"Advertiser"},{"id":25,"first_name":"","last_name":"","email":"test@nlocal.com","username":"nlocal-test2","type":"Agency"},{"id":24,"first_name":"","last_name":"","email":"info@nlocal.com","username":"nlocal","type":"Agency"},{"id":23,"first_name":"","last_name":"","email":"admin@nlocal.com","username":"admin","type":"Admin"},{"id":21,"first_name":"","last_name":"","email":"daniel.prado@nlocal.com","username":"vailimo","type":"Admin"},{"id":18,"first_name":"Name17","last_name":"Last17","email":"test17@api-app.com","username":"test17","type":null},{"id":19,"first_name":"Name18","last_name":"Last18","email":"test18@api-app.com","username":"test18","type":null},{"id":20,"first_name":"Name19","last_name":"Last19","email":"test19@api-app.com","username":"test19","type":null},{"id":9,"first_name":"Name8","last_name":"Last8","email":"test8@api-app.com","username":"test8","type":null},{"id":10,"first_name":"Name9","last_name":"Last9","email":"test9@api-app.com","username":"test9","type":null},{"id":11,"first_name":"Name10","last_name":"Last10","email":"test10@api-app.com","username":"test10","type":null},{"id":12,"first_name":"Name11","last_name":"Last11","email":"test11@api-app.com","username":"test11","type":null},{"id":13,"first_name":"Name12","last_name":"Last12","email":"test12@api-app.com","username":"test12","type":null},{"id":14,"first_name":"Name13","last_name":"Last13","email":"test13@api-app.com","username":"test13","type":null},{"id":15,"first_name":"Name14","last_name":"Last14","email":"test14@api-app.com","username":"test14","type":null},{"id":16,"first_name":"Name15","last_name":"Last15","email":"test15@api-app.com","username":"test15","type":null},{"id":17,"first_name":"Name16","last_name":"Last16","email":"test16@api-app.com","username":"test16","type":null},{"id":3,"first_name":"Name2","last_name":"Last2","email":"test2@api-app.com","username":"test2","type":null}]'
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 09:27:09 GMT
+recorded_with: VCR 3.0.3

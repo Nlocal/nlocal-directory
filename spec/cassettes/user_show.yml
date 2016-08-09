@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://devbox:3000/api/users/29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/vnd.nlocal-v1+json
+      Authorization:
+      - bearer <DUMMY_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Request-Method:
+      - '*'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"e517d54b02b8ebf4645ded1716c147f0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _nlocal-directory-api_session=Ry9CQUJBUHNWWTBGMW90cFN5T0Zpam92U0gvK0pSUklhT2hKRG85SWNBRnJXOUh3YXkwSXBteFA2NmNyQTZQVjJRdHZka2s4c1VPQkRaWlR0TC9xTEE9PS0taS9XZmJqRzgyalJpbmRJbnFYcHJmdz09--3b01c5f11171db8a778590590ccbbcddb782cc76;
+        path=/; HttpOnly
+      X-Request-Id:
+      - f053d492-db4f-45d6-ac4c-52a6bafa7db3
+      X-Runtime:
+      - '0.016539'
+      Vary:
+      - Origin
+      Content-Length:
+      - '130'
+    body:
+      encoding: UTF-8
+      string: '{"id":29,"first_name":"test","last_name":"creating","email":"advertiser4@nlocal.com","username":"advertiser3","type":"Advertiser"}'
+    http_version: 
+  recorded_at: Tue, 09 Aug 2016 09:27:09 GMT
+recorded_with: VCR 3.0.3
