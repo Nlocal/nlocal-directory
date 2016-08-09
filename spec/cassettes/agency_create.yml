@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://devbox:3000/api/users/39
+    method: post
+    uri: http://devbox:3000/api/users
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: email=agency%40test.com&first_name=agency&last_name=test&password=agency_test&type=Agency&username=agency_test
     headers:
       User-Agent:
       - Faraday v0.9.2
@@ -13,12 +13,14 @@ http_interactions:
       - application/vnd.nlocal-v1+json
       Authorization:
       - bearer <DUMMY_TOKEN>
+      Content-Type:
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -31,12 +33,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=NVJOTkRLV3l0Z0xsSjUwdzRrRDNLZGk3b0kvbnN3aC8vSnkyRXJXYzhSV3ZmTVpOWVVpbGFnN0N0ZEd4VUY0SUtNSyt6ZFN4cUprc1NFakNqbFUvN0E9PS0tUG10RE5uekRZSE83SDhYK1kvZ2N1dz09--4ca06d0256b2407de6bd790e7597686f60dad437;
+      - _nlocal-directory-api_session=WlY0VkE0RDY2dkxKZGpnNkx6NGRqK0IwVkI0NnhIYmpwLzc1NjJCVDNKRWJlbHNXWVRXQUZsK1JrMm9iWW10TFpoTzduWlRVcktNNy9oK2pIZ0hyOFE9PS0tdTNjVnVsbGdNbUp2YXltYjhKY3NlQT09--5d83f4c000a080baf6e61ccedc7ddd32fb299a3a;
         path=/; HttpOnly
       X-Request-Id:
-      - 653fa718-6a97-44a9-b1cd-ac5c37a837bb
+      - d80c3159-e72f-4ee2-8929-25c914574033
       X-Runtime:
-      - '0.021386'
+      - '0.271260'
       Vary:
       - Origin
       Content-Length:

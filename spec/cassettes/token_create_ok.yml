@@ -33,16 +33,16 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec298f232c64dcbef489929cc1a7b5a4"
+      - W/"b607804e58f0cd4a8da3c95114c41bb1"
       X-Request-Id:
-      - fc156fc8-1cb0-422a-b449-99682aca5fc6
+      - 5b0a7476-4a9b-451f-81bc-49757d0921c5
       X-Runtime:
-      - '0.072621'
+      - '0.078142'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86399,"created_at":1470734828}'
+      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86399,"created_at":1470747247}'
     http_version: 
-  recorded_at: Tue, 09 Aug 2016 09:27:08 GMT
+  recorded_at: Tue, 09 Aug 2016 12:54:07 GMT
 recorded_with: VCR 3.0.3

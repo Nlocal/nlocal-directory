@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
+    method: put
     uri: http://devbox:3000/api/users/39
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: email=agency%40test.com&first_name=test&id=39&last_name=agency&type=Agency&username=agency_test
     headers:
       User-Agent:
       - Faraday v0.9.2
@@ -13,6 +13,8 @@ http_interactions:
       - application/vnd.nlocal-v1+json
       Authorization:
       - bearer <DUMMY_TOKEN>
+      Content-Type:
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -27,23 +29,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"eaca0536490edd26915afb646cc534a5"
+      - W/"082a2c4f64a980e67d08ad29259fefcf"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=NVJOTkRLV3l0Z0xsSjUwdzRrRDNLZGk3b0kvbnN3aC8vSnkyRXJXYzhSV3ZmTVpOWVVpbGFnN0N0ZEd4VUY0SUtNSyt6ZFN4cUprc1NFakNqbFUvN0E9PS0tUG10RE5uekRZSE83SDhYK1kvZ2N1dz09--4ca06d0256b2407de6bd790e7597686f60dad437;
+      - _nlocal-directory-api_session=RzBOa1oxME0raWdUbDAwKzhWUUluY3NKakEzSGhlckswcVBqWE04M3UvdG9iK3kvWXdtM2lraGJsVndIL0hzWkxTdEtPRjZsTmVGbkt4Z0grYTZLYnc9PS0tbk4xWmgxeTVYbjU4SlZMa0JxZVZUUT09--e2fbed99fc44cbdeca66af45e65e426616beb97f;
         path=/; HttpOnly
       X-Request-Id:
-      - 653fa718-6a97-44a9-b1cd-ac5c37a837bb
+      - d7a999bc-db2f-4946-8b12-bd4076f91ad9
       X-Runtime:
-      - '0.021386'
+      - '0.025352'
       Vary:
       - Origin
       Content-Length:
       - '117'
     body:
       encoding: UTF-8
-      string: '{"id":39,"first_name":"agency","last_name":"test","email":"agency@test.com","username":"agency_test","type":"Agency"}'
+      string: '{"id":39,"first_name":"test","last_name":"agency","email":"agency@test.com","username":"agency_test","type":"Agency"}'
     http_version: 
   recorded_at: Tue, 09 Aug 2016 12:54:07 GMT
 recorded_with: VCR 3.0.3
