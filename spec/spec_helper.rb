@@ -12,7 +12,21 @@ Dotenv.load
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
-  c.allow_http_connections_when_no_cassette = true
+  c.default_cassette_options = { :record => :new_episodes, :erb => true }
+
+  c.filter_sensitive_data('<PASSWORD>') do |interaction|
+    CGI.escape(test_password)
+  end
+  c.filter_sensitive_data('<USER>') do |interaction|
+    CGI.escape(test_user)
+  end
+  c.filter_sensitive_data('<DUMMY_TOKEN>') do |interaction|
+    CGI.escape(RequestStore.store[:token].access_token) if RequestStore.store[:token]
+  end
+  c.filter_sensitive_data('<DUMMY_TOKEN>') do |interaction|
+    token_matches= /"access_token":"(?<token>.+)",/.match(interaction.response.body)
+    token_matches ? token_matches[:token] : nil
+  end
 end
 
 RSpec.configure do |config|
@@ -65,6 +79,7 @@ RSpec.configure do |config|
 
   end)
 end
+
 
 def test_user
   RequestStore.store[:user] ||= ENV['API_EMAIL']
