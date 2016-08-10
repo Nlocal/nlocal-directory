@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://devbox:3000/api/ads/13
+    uri: http://devbox:3000/api/ads/21
     body:
       encoding: UTF-8
       string: ''
@@ -29,23 +29,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"6f2c12f7ce72343bb540e0edd297be26"
+      - W/"19a6d2f5721a2d32440efbc6f7d39ce1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=R0dDSEloeTlqYnFST3FYR1VRQXdGSGlBYnlQQTNpV0V3L0VCQlpMSHNRcHFJNlRoNXJWN3JIOHRqQjNxNE1jRXVaaTR5eEpBdmJaWmtLVDltQUVmTEE9PS0tYnNiU0EyaEVSSkROY2FMNjBidEc2dz09--1548297772b3d236fc2c3fc62e6fd53555c0c97d;
+      - _nlocal-directory-api_session=M3A0RmNpdTBEUzNMdldVSnJtWTlrTS9GSHJSdldOSzBFQksxbnNhREg5OWlIbjlXSmpHS3N1QmR6UW5LTTdnYnMyN2RYWjk1a1QyQ1Rtc3BmSDlDQnc9PS0tdXNwK000a01JTzlnK2U2TG1RUjh5QT09--f4ce9f3b015f20ba96c73445b34102c6bb542568;
         path=/; HttpOnly
       X-Request-Id:
-      - 1a76ee8b-8eaf-4410-bb32-eed8af8b0fb4
+      - 5c4204ca-9004-4589-af61-c2931a6273b1
       X-Runtime:
-      - '0.034065'
+      - '0.028664'
       Vary:
       - Origin
       Content-Length:
       - '149'
     body:
       encoding: UTF-8
-      string: '{"id":13,"advertiser_id":56,"created_at":"2016-08-10T07:45:40.000Z","updated_at":"2016-08-10T07:45:40.000Z","logo_id":null,"title":"ad_test_updated"}'
+      string: '{"id":21,"advertiser_id":80,"created_at":"2016-08-10T08:45:15.000Z","updated_at":"2016-08-10T08:45:15.000Z","logo_id":null,"title":"ad_test_updated"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:15 GMT
 recorded_with: VCR 3.0.3

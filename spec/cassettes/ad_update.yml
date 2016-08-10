@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://devbox:3000/api/ads/13
+    uri: http://devbox:3000/api/ads/21
     body:
       encoding: UTF-8
-      string: advertiser_id=56&average_rating_percent=0.0&average_rating_round=0&id=13&logo_id&title=ad_test_updated
+      string: advertiser_id=80&average_rating_percent=0.0&average_rating_round=0&id=21&logo_id&title=ad_test_updated
     headers:
       User-Agent:
       - Faraday v0.9.2
@@ -29,23 +29,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"eb33899186defe6a9ba9d01cb9d5132c"
+      - W/"19f8e341dbfd73cc8d1119808476eee4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=bis0SUVWaU5WRmlyR0FvaWR3c1o4YkV4Z2RHYVh3WWlxb0d1RkZmOThSMm00alhZSzlsQ041Ykg3SGVxcFZRcEZzUnJSQ1JMbnhzamFUWTkvaEV0bHc9PS0tMzgvenpiSlMzb1IvM05LRHNBaUE3UT09--29bd0722d9747e7cf93b951cd0545e9223766b63;
+      - _nlocal-directory-api_session=alUxWUQxdVpqK3liZ3hNVEJoTFZ4dnZ3cmwvTnZpV1UrbG41VUY1VCs0Wk1MaTRYVzVpblNoQnBuK29Ed1dxMnV3Z1BUd0k5eEI1UGthVjRDdG5xTnc9PS0tMWwrUTd1dktmVzRXOGt3WkliQTFuQT09--707948925a20f164d00b5dc5a66c8c73ccd3cbe4;
         path=/; HttpOnly
       X-Request-Id:
-      - f3283420-012a-4248-ac17-c99c545d5372
+      - 963a0c3e-5e3d-42f2-8ba5-e25352172d1d
       X-Runtime:
-      - '0.030855'
+      - '0.032686'
       Vary:
       - Origin
       Content-Length:
       - '123'
     body:
       encoding: UTF-8
-      string: '{"id":13,"title":"ad_test_updated","advertiser_id":56,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0}'
+      string: '{"id":21,"title":"ad_test_updated","advertiser_id":80,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:15 GMT
 recorded_with: VCR 3.0.3

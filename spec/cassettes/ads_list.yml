@@ -31,12 +31,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=TDJzd1lGUEc3M0RnUU9ENFhkcmxQcWUwbll4bVF1V1J5UFVSc2Flbm1Gc01MZVE2amdMdC96Q1BITlVjbkFubW5XQTMyd3gvK3hKK1MzSUp0YXNPVkE9PS0tRUdpUXNQNnk5UUVZaTdyTlJTKyt5dz09--8b40e17eac2b425b512c107ec0516d1046be032b;
+      - _nlocal-directory-api_session=aS9JWEozMm5qRXdNdWtUQ2hvc1JldStNMGM1aklYWGlTNk5scVVwT1ovc2hKSjExcjJhcjFibVQyVmZ6d2RhV2IwbnZvbHRPZ1dwaVMybW44dDY0Zmc9PS0tWVo2UWREaTVEV01hUWpLYzJacUxPUT09--0bf5e01ad887f5349b61d3740bc870713743150f;
         path=/; HttpOnly
       X-Request-Id:
-      - ce855850-a51b-497e-a27e-07e84fc2becb
+      - f5b928b3-d469-4620-8831-b6c836a1486c
       X-Runtime:
-      - '0.023377'
+      - '0.031584'
       Vary:
       - Origin
       Content-Length:
@@ -45,5 +45,5 @@ http_interactions:
       encoding: UTF-8
       string: '[{"id":11,"title":"test","advertiser_id":28,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0},{"id":8,"title":"test8","advertiser_id":28,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0},{"id":7,"title":"test7","advertiser_id":28,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0},{"id":6,"title":"test6","advertiser_id":28,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0},{"id":5,"title":"test1","advertiser_id":28,"logo_id":null,"average_rating_percent":100.0,"average_rating_round":10},{"id":4,"title":"test5","advertiser_id":28,"logo_id":null,"average_rating_percent":60.0,"average_rating_round":6}]'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:15 GMT
 recorded_with: VCR 3.0.3

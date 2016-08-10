@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://devbox:3000/api/users/56
+    uri: http://devbox:3000/api/users/80
     body:
       encoding: UTF-8
       string: ''
@@ -29,28 +29,28 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"20c06ef8dd0d30a0d48e03c6d2968bdb"
+      - W/"f8d661e454dfb9d430a9f72cbe5d7057"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=QWJJejBhRHM1UnNPUGxBVFhOcE41Q1FKczhiSWlJQW15cVd0Z05XNktkR3lGQk1FdTdvUC8wblh6bzUrUG5qMzM4a3NPVEZNUE5hcDNQY2xVdExPK1E9PS0tbSs2WEs3c0hLRDdWT21IQmIxNk5iQT09--089f29520c62fc8ee217e06cdbbe020a4b8db6c0;
+      - _nlocal-directory-api_session=TnYwTldtckZVSENLR1IrNWJONFdxTWU0T0pyR3F6YTI0bWxIRGUwaDZDSnpBcUg3RkhLN1ZycGtFV3ErekRFQUFDbU1uL2hpV3Jrem9QeXJDbzBZd3c9PS0tU0QvRTV1STlqT3pNWGFlTUxvQ3ByZz09--8f494549f043a5ac447dd24c38bab0e188cda32e;
         path=/; HttpOnly
       X-Request-Id:
-      - 2789cb23-8820-42fd-95a5-f2de8bc5fbe4
+      - 08cf37f2-21a7-4b63-a670-577a25741d93
       X-Runtime:
-      - '0.030943'
+      - '0.026817'
       Vary:
       - Origin
       Content-Length:
       - '147'
     body:
       encoding: UTF-8
-      string: '{"id":56,"first_name":"advertiser","last_name":"ad_test","email":"ad_test_advertiser@test.com","username":"ad_test_advertiser","type":"Advertiser"}'
+      string: '{"id":80,"first_name":"advertiser","last_name":"ad_test","email":"ad_test_advertiser@test.com","username":"ad_test_advertiser","type":"Advertiser"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:15 GMT
 - request:
     method: delete
-    uri: http://devbox:3000/api/users/58
+    uri: http://devbox:3000/api/users/82
     body:
       encoding: UTF-8
       string: ''
@@ -77,28 +77,28 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"ac8d2b449af6d59aed7aa578bcaec231"
+      - W/"3d5244667311c09f219f074e0ec1779d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=cGhGNTUySkVBam0yNGcxRzhZN2pFVXZ6MFhoalRnSUpFMkxvb3VUNERwdGZIU1NFaG90RU1Xa2lWM1FCV2llMHdST1BRR2VpTi9GdStodHlGTWE2S0E9PS0tQTFkTGJUS3ovL0J6MkxkSXVFU3FMUT09--e178fb30e67ecccef58ff2f89975cf4fa9062921;
+      - _nlocal-directory-api_session=clB3TUJlV0xYbWthaUp0WUNyOElITk9wRTZ0UjFneENDbnVVK2FWOEVCci9JU3l1a0Q2OTlXckVCOW8vRkNMdjlVYVV4YXRNblRuMldsY1U5VVZBOWc9PS0tbkVZUXErUVNwRjIxTTJoejdRSlNmZz09--c5f84eac5852e75400a70392df6d5e341ae95ee7;
         path=/; HttpOnly
       X-Request-Id:
-      - 12bc8e53-9bd6-420e-bee8-1e80cc4c91a3
+      - d1f57956-5290-498d-884a-468ae66ffac0
       X-Runtime:
-      - '0.028118'
+      - '0.024709'
       Vary:
       - Origin
       Content-Length:
       - '133'
     body:
       encoding: UTF-8
-      string: '{"id":58,"first_name":"test","last_name":"advertiser","email":"advertiser@test.com","username":"advertiser_test","type":"Advertiser"}'
+      string: '{"id":82,"first_name":"test","last_name":"advertiser","email":"advertiser@test.com","username":"advertiser_test","type":"Advertiser"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 07:45:42 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:17 GMT
 - request:
     method: delete
-    uri: http://devbox:3000/api/users/57
+    uri: http://devbox:3000/api/users/81
     body:
       encoding: UTF-8
       string: ''
@@ -125,23 +125,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"08df39d04c067d2e07f076c67c556fac"
+      - W/"96739048ba923b940876fd042701c2f0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=UW1rc1o3UVlpeTV4Tm5vUFg4UlA0SzZDa3M3UzlLSS9TTS9lNWE2alNhWHVtWGZ5d3ZMWXRUZGFqVjFSci8vdUZxbU56OTR2akkrdWZjcm9rNUZUbkE9PS0tS0l4L0pEU0h6b21Bc1F6RWJmVzhIZz09--585482b1775b0add6bd53ff187424ff377969165;
+      - _nlocal-directory-api_session=djVLaktKeHBxd21rRnArY0dQN2F0SnRyWjQ5NmIvb0luUUU1WFV2RTkzYjdLZ0dRUUVUdjVvVXdnWS9LWUhSYytIL1ZSdHFZTDR5d3hXc2RwbVVzNmc9PS0tWDJFWS96OUhERlp4OXpxbS96UUJldz09--c11b168c677b39d1c9bbf33a4c5d17d9dbf9bcbe;
         path=/; HttpOnly
       X-Request-Id:
-      - ceb5301f-e861-4279-a3a8-9a78e24a5f5f
+      - d937275a-21dc-4c8f-a839-12452fe0de74
       X-Runtime:
-      - '0.024436'
+      - '0.023860'
       Vary:
       - Origin
       Content-Length:
       - '117'
     body:
       encoding: UTF-8
-      string: '{"id":57,"first_name":"test","last_name":"agency","email":"agency@test.com","username":"agency_test","type":"Agency"}'
+      string: '{"id":81,"first_name":"test","last_name":"agency","email":"agency@test.com","username":"agency_test","type":"Agency"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 07:45:42 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:17 GMT
 recorded_with: VCR 3.0.3

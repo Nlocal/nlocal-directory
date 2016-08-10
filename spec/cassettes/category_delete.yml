@@ -1,10 +1,10 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://devbox:3000/api/ads/21
+    method: delete
+    uri: http://devbox:3000/api/categories/13
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
@@ -13,6 +13,8 @@ http_interactions:
       - application/vnd.nlocal-v1+json
       Authorization:
       - bearer <DUMMY_TOKEN>
+      Content-Type:
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -27,23 +29,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"92843fa6fbc735cad743db5b7f10ae7e"
+      - W/"db46cb86083edf47afed1cf142bbf204"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=WC9RTGl2OHVQZFV4aHU4UjdmSnd0TG5hSjVKVU1kNzRjV3VsZWV1d0thckhTd21lUUQ2RnU5QXFrUmxQaU85TjlmS3F1WlU1eGpCMkQwK2ovUzRnTkE9PS0tcDM4bE5GR3N3VWdxYkJkaGs0S0tCZz09--e0e97286533e01bb32cf1b2a5beeb487749fd1f7;
+      - _nlocal-directory-api_session=WUszVTdya09GZHdJU2thZm1mc1hyellWalduR0w1dXlZZlBicUkxZ0xIdjBhMFhOeU5LRmZvbmhMSjZEYXBJUHZKQjJKLzFwc0NLRUZJclNDTlJZcHc9PS0tRFlLTzNKbDZNM0d5WDAxSEFmSWxsQT09--e3f4efc818301cd80ae64fa287bc85a26a9f0d1f;
         path=/; HttpOnly
       X-Request-Id:
-      - 4a111824-1d03-42b8-be2b-b0b53ea41781
+      - ab714044-f4b7-4281-8064-497c0156c940
       X-Runtime:
-      - '0.017575'
+      - '0.024007'
       Vary:
       - Origin
       Content-Length:
-      - '115'
+      - '183'
     body:
       encoding: UTF-8
-      string: '{"id":21,"title":"ad_test","advertiser_id":80,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0}'
+      string: '{"id":13,"name":"category_test_updated","parent_id":null,"lft":7,"rgt":10,"depth":0,"children_count":0,"created_at":"2016-08-10T08:45:15.000Z","updated_at":"2016-08-10T08:45:16.000Z"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 08:45:15 GMT
+  recorded_at: Wed, 10 Aug 2016 08:45:16 GMT
 recorded_with: VCR 3.0.3
