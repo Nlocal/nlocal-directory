@@ -1,7 +1,7 @@
 require 'spec_helper'
 RSpec.describe Nlocal::Directory::Ad do
 
- context "admin user" do
+ context "[Admin]" do
    before :all do
      test_user
      test_password
@@ -27,7 +27,7 @@ RSpec.describe Nlocal::Directory::Ad do
    end
 
    describe :index do
-     context 'get all' do
+     context 'ads' do
        use_vcr_cassette "ads_list"
 
        subject(:ads) {
@@ -38,7 +38,7 @@ RSpec.describe Nlocal::Directory::Ad do
    end
 
    describe :create do
-     context "create ad" do
+     context "ad" do
        use_vcr_cassette "ad_create"
        subject(:ad){Nlocal::Directory::Ad.create(title: "ad_test", advertiser_id: @advertiser.id)}
 
@@ -50,7 +50,7 @@ RSpec.describe Nlocal::Directory::Ad do
    end
 
    describe :show do
-     context "get ad" do
+     context "ad" do
        let(:ad_id){
          VCR.use_cassette("ad_create") do
            Nlocal::Directory::Ad.create(title: "ad_test", advertiser_id: @advertiser.id).id
@@ -68,8 +68,7 @@ RSpec.describe Nlocal::Directory::Ad do
    end
 
    describe :update do
-
-     context "update ad" do
+     context "ad" do
        let(:ad){
          VCR.use_cassette("ad_create") do
            Nlocal::Directory::Ad.create(title: "ad_test", advertiser_id: @advertiser.id)
@@ -87,7 +86,7 @@ RSpec.describe Nlocal::Directory::Ad do
 
    describe :delete do
 
-     context "ad delete" do
+     context "ad" do
        let(:ad){
          VCR.use_cassette("ad_create") do
            Nlocal::Directory::Ad.create(title: "ad_test", advertiser_id: @advertiser.id)
@@ -104,5 +103,5 @@ RSpec.describe Nlocal::Directory::Ad do
    end
  end
 
- 
+
 end
