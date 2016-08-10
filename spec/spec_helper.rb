@@ -12,7 +12,10 @@ Dotenv.load
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
-  c.default_cassette_options = { :record => :new_episodes, :erb => true }
+  c.default_cassette_options = { record: :new_episodes,
+                                 erb: true,
+                                 match_requests_on: [:uri, :body, :method]
+                               }
 
   c.filter_sensitive_data('<PASSWORD>') do |interaction|
     CGI.escape(test_password)
