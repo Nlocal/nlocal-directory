@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://devbox:3000/api/users/43
+    uri: http://devbox:3000/api/users/57
     body:
       encoding: US-ASCII
       string: ''
@@ -27,28 +27,28 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"31a3830893c57c7f6b5ea84d48a09b06"
+      - W/"46bde19d5b1f53a38e4eb61b669d93fd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=RWFJS0xuaEFzd1poRlU1Y2hYWGxJRXdUWEJ5VWZNUk9DZEJCQWFkellNbDBQYlIzSXRVTmxIVzBQRlR6ZWNKMWlzNmZIVjM2RWlwSjZaajdPM01xa0E9PS0tVDlOcm5LNSt1YnYwWXUzaHdtNmxWZz09--f26b148658c365413c9cb9ee2c4934c138504399;
+      - _nlocal-directory-api_session=SjFMZFYxR0Fld1cycnBtSW5PVG5LZm9hZVZWUXNaenFYOERHQ25PbjJnNzBIcFg2ZmV1cXliSUFqQjhnOGI4ZzhxbHRGcDcxeTNDRllxR1FDL2Ria3c9PS0tTVBBQUxPU2hMY0Q1U2V2RzZwSVBoQT09--d58abc54429afc58c6e92b763a737c01f09d1556;
         path=/; HttpOnly
       X-Request-Id:
-      - 7b1001bb-b87c-4125-a630-99757d5bcb65
+      - 6939b6c0-2827-4248-9b33-14dc040c70f8
       X-Runtime:
-      - '0.012483'
+      - '0.013142'
       Vary:
       - Origin
       Content-Length:
       - '117'
     body:
       encoding: UTF-8
-      string: '{"id":43,"first_name":"agency","last_name":"test","email":"agency@test.com","username":"agency_test","type":"Agency"}'
+      string: '{"id":57,"first_name":"agency","last_name":"test","email":"agency@test.com","username":"agency_test","type":"Agency"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 05:58:47 GMT
+  recorded_at: Wed, 10 Aug 2016 07:45:41 GMT
 - request:
     method: get
-    uri: http://devbox:3000/api/users/44
+    uri: http://devbox:3000/api/users/58
     body:
       encoding: US-ASCII
       string: ''
@@ -73,23 +73,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"79950b58551082f359d3bbf2e8f26faf"
+      - W/"d4a7514f5dab98d36d94e9a6b2504168"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=TzUvQW9RaGRhZXpoOEZEWVpRMXI0ZXZLQVQ0V0FMZnZ6U0NuWTRCRDBFUnFZdWZ5RmpySG1uVGdENlNRTFdqc25Pdm1GWS9JMXVpV0tNdU1tNzJTbXc9PS0tekFUemxJejJqYloyTXpWOGVlOThtZz09--44364e0bcbfe20b46a6bf04c0fad3be7a3e268ad;
+      - _nlocal-directory-api_session=T2x5cXM2Myt0Sm12YkZzT0d3MFpwNHY5VnVuekF6TmROMWo1TWhFZWhWZXMrbHlMR2VScnc2dDdJWHMxOGZXdUk5S0NYY1IwV1JiWUZzaGZhUko0eEE9PS0tZ2xFTm15Yi80YVZaL2NobGZwM0s0Zz09--b676d6c77db72c0875eccc9ffa09f4ec38e679c0;
         path=/; HttpOnly
       X-Request-Id:
-      - e071b544-61c3-4b34-a99d-b586883d2a40
+      - 57a7e7dd-36b9-4cbf-bc32-919aba613008
       X-Runtime:
-      - '0.011792'
+      - '0.012657'
       Vary:
       - Origin
       Content-Length:
       - '133'
     body:
       encoding: UTF-8
-      string: '{"id":44,"first_name":"advertiser","last_name":"test","email":"advertiser@test.com","username":"advertiser_test","type":"Advertiser"}'
+      string: '{"id":58,"first_name":"advertiser","last_name":"test","email":"advertiser@test.com","username":"advertiser_test","type":"Advertiser"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 05:58:47 GMT
+  recorded_at: Wed, 10 Aug 2016 07:45:41 GMT
 recorded_with: VCR 3.0.3

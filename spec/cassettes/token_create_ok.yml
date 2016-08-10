@@ -33,18 +33,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f6155de91f20a2d376e5693b98a3c24a"
+      - W/"91359dafa2d08314b8c312210f9db651"
       X-Request-Id:
-      - d7112e04-70fa-4d29-8008-d9f4b5393050
+      - fbef10e6-dcfd-4d1e-806f-1fb548843d8f
       X-Runtime:
-      - '0.078261'
+      - '0.077609'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86399,"created_at":1470808726}'
+      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86400,"created_at":1470815140}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 05:58:46 GMT
+  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
 - request:
     method: post
     uri: http://devbox:3000/oauth/token
@@ -80,16 +80,16 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"575ee220015e8930865a9158e1e84b64"
+      - W/"547fdce7c02a1a71e9f3cc75831adb04"
       X-Request-Id:
-      - 46151418-a59b-4541-8e57-086a22dc072c
+      - 70008a51-883a-4a8d-8a66-6e28c324807e
       X-Runtime:
-      - '0.078355'
+      - '0.081678'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86400,"created_at":1470808727}'
+      string: '{"access_token":"<DUMMY_TOKEN>","expires_in":86400,"created_at":1470815141}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 05:58:47 GMT
+  recorded_at: Wed, 10 Aug 2016 07:45:41 GMT
 recorded_with: VCR 3.0.3

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://devbox:3000/api/users/43
+    uri: http://devbox:3000/api/users/57
     body:
       encoding: UTF-8
-      string: email=agency%40test.com&first_name=test&id=43&last_name=agency&password=agency_test&type=Agency&username=agency_test
+      string: email=agency%40test.com&first_name=test&id=57&last_name=agency&password=agency_test&type=Agency&username=agency_test
     headers:
       User-Agent:
       - Faraday v0.9.2
@@ -29,31 +29,31 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"1348c3711b8e6e4a3a2a1b6cc4cc9982"
+      - W/"08df39d04c067d2e07f076c67c556fac"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=eERvVXowODIvRHJkOXdLQXVoU084c2dIYStEMnFTT05nTmxwNUtjRWQyUmZWQlZUemdXdTl2T3ZaVS9WQmtvZVdjU0kzUDc2UFMrQU1pUWczVDVrYnc9PS0tZTY1VmZ1NzFibXY3TDhmQzdneXVmdz09--2f183e869f8e6fe5cf6d704148ab25ffbe0f56b1;
+      - _nlocal-directory-api_session=MVNYL2x5MkpoUWV3Z3FQMzN3alJONGJ3Znk2ZHV1SWJaMzllTkU4amhzWGhxemVlclhBUExmVTJGZVd4YXVRWkFzYlpvTmN6dlUyWXd1RHhlTFBUdXc9PS0tU0hkV3ZkbTJQUHBrdXdPbGtiQmY5UT09--d3c9a397f638ebb02d25f73dca487648d1317d9d;
         path=/; HttpOnly
       X-Request-Id:
-      - b7925bb5-946b-4846-a4b5-308eef9a41c3
+      - 8bd3cbb7-6186-4265-aa93-ea79dbc027c5
       X-Runtime:
-      - '0.088393'
+      - '0.086988'
       Vary:
       - Origin
       Content-Length:
       - '117'
     body:
       encoding: UTF-8
-      string: '{"id":43,"first_name":"test","last_name":"agency","email":"agency@test.com","username":"agency_test","type":"Agency"}'
+      string: '{"id":57,"first_name":"test","last_name":"agency","email":"agency@test.com","username":"agency_test","type":"Agency"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 05:58:48 GMT
+  recorded_at: Wed, 10 Aug 2016 07:45:42 GMT
 - request:
     method: put
-    uri: http://devbox:3000/api/users/44
+    uri: http://devbox:3000/api/users/58
     body:
       encoding: UTF-8
-      string: email=advertiser%40test.com&first_name=test&id=44&last_name=advertiser&password=advertiser_test&type=Advertiser&username=advertiser_test
+      string: email=advertiser%40test.com&first_name=test&id=58&last_name=advertiser&password=advertiser_test&type=Advertiser&username=advertiser_test
     headers:
       User-Agent:
       - Faraday v0.9.2
@@ -77,23 +77,23 @@ http_interactions:
       Content-Type:
       - application/json
       Etag:
-      - W/"548b9c9f128cc1d588ddfd84a8d8bad5"
+      - W/"ac8d2b449af6d59aed7aa578bcaec231"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _nlocal-directory-api_session=aDVpOFJRUXI3MUphZGJsWHZmKytpb1pJNy9XOVVhWGYxUGZQUk4zcDkxZ0Zya1IydHJCRVBvNDNXeUdTczduak82R29ETnJOVHFzVXAzbno1RXl4MVE9PS0tdis1VHFZMGFNdlc4OHkxUERsR0NUZz09--0f050e1dd8b133b684bf46ba28e50d62ebdceaa6;
+      - _nlocal-directory-api_session=bU5sYkpaYmNwNTdGdjVBMS9ZcmdUbUl6VkI1VTVvL3A3QUFZRXIzeTJ6L3JjcEJUQjdKUFlnMzg4czJZQ2h0eFRGNTFZQW9vRUp1dDlQZ3p0OGlvQnc9PS0tWnNTZml3T2FvWTcycTFGR05Seko4UT09--f58abbe92e9c302ed03fe051eef68edad14b3520;
         path=/; HttpOnly
       X-Request-Id:
-      - 3f3aaed1-cf84-4d4c-9434-f3e7dd972c03
+      - bd4b478b-53f1-49ae-9e21-fc84a641f14f
       X-Runtime:
-      - '0.088310'
+      - '0.088179'
       Vary:
       - Origin
       Content-Length:
       - '133'
     body:
       encoding: UTF-8
-      string: '{"id":44,"first_name":"test","last_name":"advertiser","email":"advertiser@test.com","username":"advertiser_test","type":"Advertiser"}'
+      string: '{"id":58,"first_name":"test","last_name":"advertiser","email":"advertiser@test.com","username":"advertiser_test","type":"Advertiser"}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 05:58:48 GMT
+  recorded_at: Wed, 10 Aug 2016 07:45:42 GMT
 recorded_with: VCR 3.0.3

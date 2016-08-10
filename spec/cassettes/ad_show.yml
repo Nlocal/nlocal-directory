@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://devbox:3000/api/ads/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/vnd.nlocal-v1+json
+      Authorization:
+      - bearer <DUMMY_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Request-Method:
+      - '*'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"e03a162739797735126d9e839891c43d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _nlocal-directory-api_session=NjYvNHRpcjJtazVIMkhQQTVaTXFvMnZSMFFqeTI3cUR1ekZkcGZ6T1VsTXlPdXArU2NFOEtEbFJDQy9nMWJQMG5WK0xYZURIQy9WZVpaY1ZySmhGMlE9PS0tN1M3S3N2VWloT0hyKzJ1dWt6RDJzZz09--f862aef7a683f48d9404d35205dbc1fef72c3217;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 16acefba-ff91-41d7-86da-9618a1762460
+      X-Runtime:
+      - '0.016237'
+      Vary:
+      - Origin
+      Content-Length:
+      - '115'
+    body:
+      encoding: UTF-8
+      string: '{"id":13,"title":"ad_test","advertiser_id":56,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0}'
+    http_version: 
+  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
+recorded_with: VCR 3.0.3

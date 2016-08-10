@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://devbox:3000/api/ads/13
+    body:
+      encoding: UTF-8
+      string: advertiser_id=56&average_rating_percent=0.0&average_rating_round=0&id=13&logo_id&title=ad_test_updated
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/vnd.nlocal-v1+json
+      Authorization:
+      - bearer <DUMMY_TOKEN>
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Request-Method:
+      - '*'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"eb33899186defe6a9ba9d01cb9d5132c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _nlocal-directory-api_session=bis0SUVWaU5WRmlyR0FvaWR3c1o4YkV4Z2RHYVh3WWlxb0d1RkZmOThSMm00alhZSzlsQ041Ykg3SGVxcFZRcEZzUnJSQ1JMbnhzamFUWTkvaEV0bHc9PS0tMzgvenpiSlMzb1IvM05LRHNBaUE3UT09--29bd0722d9747e7cf93b951cd0545e9223766b63;
+        path=/; HttpOnly
+      X-Request-Id:
+      - f3283420-012a-4248-ac17-c99c545d5372
+      X-Runtime:
+      - '0.030855'
+      Vary:
+      - Origin
+      Content-Length:
+      - '123'
+    body:
+      encoding: UTF-8
+      string: '{"id":13,"title":"ad_test_updated","advertiser_id":56,"logo_id":null,"average_rating_percent":0.0,"average_rating_round":0}'
+    http_version: 
+  recorded_at: Wed, 10 Aug 2016 07:45:40 GMT
+recorded_with: VCR 3.0.3
