@@ -13,7 +13,7 @@ RSpec.describe Nlocal::Directory::User do
   end
 
   describe :index do
-    context 'get all' do
+    context 'users' do
       use_vcr_cassette "users_list"
 
       subject(:users) {
@@ -24,7 +24,7 @@ RSpec.describe Nlocal::Directory::User do
   end
 
   describe :create do
-    context "create agency" do
+    context "agency" do
       use_vcr_cassette "user_create"
       subject(:agency){ RequestStore.store[:agency]= Nlocal::Directory::User.create(email:"agency@test.com",
                                               password: "agency_test",
@@ -43,7 +43,7 @@ RSpec.describe Nlocal::Directory::User do
       it {expect(agency.last_name).to eq("test")}
     end
 
-    context "create advertiser as agency" do
+    context "advertiser as agency" do
       let(:agency){
         RequestStore.store[:agency]
       }
@@ -74,7 +74,7 @@ RSpec.describe Nlocal::Directory::User do
   end
 
   describe :show do
-    context "get agency" do
+    context "agency" do
       use_vcr_cassette "user_show"
       subject(:agency){
         Nlocal::Directory::User.find(RequestStore.store[:agency].id) }
@@ -87,7 +87,7 @@ RSpec.describe Nlocal::Directory::User do
       it {expect(agency.last_name).to eq("test")}
     end
 
-    context "get advertiser as agency" do
+    context "advertiser as agency" do
       let(:agency){
         RequestStore.store[:agency]
       }
@@ -113,7 +113,7 @@ RSpec.describe Nlocal::Directory::User do
 
   describe :update do
 
-    context "update agency" do
+    context "agency" do
       let(:agency) {
         RequestStore.store[:agency]
       }
@@ -128,7 +128,7 @@ RSpec.describe Nlocal::Directory::User do
       it {expect(updated_agency.last_name).to eq("agency")}
     end
 
-    context "update advertiser as agency" do
+    context "advertiser as agency" do
       let(:agency){
         RequestStore.store[:agency]
       }
@@ -156,7 +156,7 @@ RSpec.describe Nlocal::Directory::User do
 
   describe :delete do
 
-    context "advertiser delete as agency" do
+    context "advertiser as agency" do
       let(:agency){
         RequestStore.store[:agency]
       }
@@ -177,7 +177,7 @@ RSpec.describe Nlocal::Directory::User do
       it {expect(destroyed_advertiser.id).not_to be_nil}
     end
 
-    context "agency delete" do
+    context "agency" do
       let(:agency){
         RequestStore.store[:agency]
       }
@@ -187,8 +187,6 @@ RSpec.describe Nlocal::Directory::User do
       it {expect(destroyed_agency).not_to be_empty}
       it {expect(destroyed_agency.id).not_to be_nil}
     end
-
-
   end
 
 
